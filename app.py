@@ -280,7 +280,7 @@ g1,g2,g3,g4,g5,g6,g7,g8 = groups[:8]
 
 average = round(student_df["Score"].mean(),1)
 
-strong = len(student_df[student_df["Score"] >= 6])
+strong = len(student_df[student_df["Score"] >= 5])
 weak = len(student_df[student_df["Score"] <= 2])
 
 if average >= 6:
@@ -543,7 +543,7 @@ if not student_df.empty:
 # ---------------------------------------------------
 
 strengths = student_df[
-    student_df["Score"] >= 6
+    student_df["Score"] >= 5
 ]["Criteria"].tolist()
 
 improvements = student_df[
